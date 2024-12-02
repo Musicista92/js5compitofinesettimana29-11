@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Pagina e-commerce</title>
+</head>
+
+<body>
+    <div class="titoloIniziale">
+        <h1 id="titoloNegozio"> Il mio e-commerce</h1>
+        <button onclick="cambiaTitolo()">Cambia Titolo</button>
+    </div>
+    <button onclick="cambiaClasseSfondo('nuovoColore')">Cambia colore sfondo</button>
+    <div id="containerProdotti">
+        
+
+        <div class="prodottiSingoli">
+            <img src="assets/sax.jpg" alt="">
+            <h3>sax</h3>
+            <button onclick="toggleVisibilitaImmagini()">togli immagine</button>
+            <p>EastRock Sassofono Alto E Piatto con Finitura Anticata per Studenti Principianti, con Guanti Custodia Imbottita Strap</p>
+            <div class="prezzoProdotto">207,99€</div>
+            <a
+                href=" https://www.amazon.it/EastRock-Sassofono-Finitura-Principianti-Imbottita/dp/B08DXHV386/ref=sr_1_1_sspa?__mk_it_IT=ÅMÅŽÕÑ&crid=2423ACOAHMBFO&dib=eyJ2IjoiMSJ9.buZ9P0qCKXjMRwv9Q0o1wE9Pj6gN4THkHwcZzXMSZwOGa4Nzm6D7i0uHMvZZbzLPI70cBZNqPJf7qGpue6QhDoPzttcv-ewEusR5MYYyQz9mdCs-Vzboo0rDENfIfQOGPO5E_7nT9pIlvV6qbHNK2vi05eF3KZubY2hGpgDkIrnZyoENAx6HWG4Kga7b1h-A1fMJd3q00V6zjhhKP5YyyvI4MtH3vQ9zumNxRhqnHqTgq4EbC9_1qDL6Aof5jJPIAnGu-7B_bMhGkhNzZfleqhh_hYlUBXjqcxHbvs0iWCk.n7Dje-bKYLWR4kY6qKQFANp_7i2wir0l_9dB2Pl2kbM&dib_tag=se&keywords=sax&qid=1732907652&sprefix=sa%2Caps%2C571&sr=8-1-spons&ufe=app_do%3Aamzn1.fos.4ed3ebda-5e83-4808-af48-7e08fa6b1d8b&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">
+                compra prodotto</a>
+        </div>
+        <div class=" prodottiSingoli">
+            <img src="assets/chitarra.jpg" alt="">
+            <h3>chitarra</h3>
+            <button onclick="toggleVisibilitaImmagini()">togli immagine</button>
+            <p>Fender Squier Debut Series Stratocaster Chitarra Elettrica , Chitarra per Principianti, con garanzia di 2 anni, Nero
+                Marca: Fender</p>
+            <div class="prezzoProdotto">127,49€</div>
+            <a
+                href="https://www.amazon.it/Fender-Stratocaster-Chitarra-Elettrica-Principianti/dp/B0CSM4HPJK/ref=sr_1_2_sspa?crid=VXQKUS0AEPEP&dib=eyJ2IjoiMSJ9.Krq-P_0Z66I3qVfziNLTI1SBwvxfTxu-aZyABARhdsvwpWP2lNvFlNtiv1ydu80_3Z2QA5IdB1QETXq2pxzeZroCkQLP1hACofdrMzwb8Z03Of-YCIq0YzeVKjOLXjIR-v8uFkJHdHHM1-MqB1HaGCZWhIrW2ORZ60CEkNbQ_emTSksRDX2q-ZsU1hnBWgI5toRxHAci4MydAGbS62ey8uY6abgyxZLzQzO0C09ANs3mgi2RUh6MznBC-nI2fdhDASEdHGwdGr9_piSuFwCwu1GBtk4tgUvMnaHrg_SHhw4.szhzwFWfDZdKM_7l1KYHybPmT69AMxjfg51OuT46GiU&dib_tag=se&keywords=chitarra&qid=1732907678&sprefix=chitarra%2Caps%2C366&sr=8-2-spons&ufe=INHOUSE_INSTALLMENTS%3AIT_IHI_5M_AUTOMATED&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">compra
+                prodotto</a>
+        </div>
+        <div class="prodottiSingoli">
+            <img src="assets/basso.jpg" alt="">
+            <h3>basso</h3>
+            <button onclick="toggleVisibilitaImmagini()">togli immagine</button>
+            <p>Fender Squier Debut Series Precision Chitarra Basso, Chitarra per Principianti, con garanzia di 2 anni, Nero</p>
+            <div class="prezzoProdotto">127,49€</div>
+            <a
+                href="https://www.amazon.it/Donner-DPB-510S-elettrico-custodia-tracolla/dp/B081SRT85C/ref=sr_1_4_sspa?__mk_it_IT=ÅMÅŽÕÑ&crid=HIHKN9ZA6BKA&dib=eyJ2IjoiMSJ9.bzLpUGvqRfQfzpRRCsB_dQMkrEdY4mzXzosGVjn2R4r9a1h5WqSOkeFGZLTYu9D8U678qx2HJsnQzMMSpyXJSFHc7IOVKo137eOtf6EGtXfMMhz0Fo8H8QpCH8TEqyL7gT34d-6aUGoP0LtLJ50zMXp4mSI7fbC6MiHBcvJt6MCfkqKeVyX6xWPnslizTQGQDyBYT70Je029KssJawvOrCOlynH0iv7B-b3zxVFWzGWxvkaNlU9aOFKgCeqlf0NG90pLxVrUQ8qccZh4mbP7FA5O7VdT6S9qoBmjGr6Qkgs.VrvGTild9Jku0f0r-K3YqCzzNO04UAlACdzzDJoZMxY&dib_tag=se&keywords=basso&qid=1732908366&sprefix=basso%2Caps%2C194&sr=8-4-spons&ufe=INHOUSE_INSTALLMENTS%3AIT_IHI_5M_AUTOMATED&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">compra
+                prodotto</a>
+        </div>
+        <div class="prodottiSingoli">
+            <img src="assets/batteria.jpg" alt="">
+            <h3>batteria</h3>
+            <button onclick="toggleVisibilitaImmagini()">togli immagine</button>
+            <p>Alesis Nitro Max Batteria Elettronica con Pelli Mesh Silenziose, Rullante a Doppia Zona da 10”, Bluetooth, 440+ Suoni Autentici, Drumeo, USB Midi, Pedale Grancassa</p>
+            <div class="prezzoProdotto">477,50€</div>
+            <a
+                href="https://www.amazon.it/Batterie-elettriche-Silenziosi-Soffocamento-Bacchette/dp/B08DKHYLLV/ref=sr_1_1_sspa?crid=1DSQO6WO0UPBH&dib=eyJ2IjoiMSJ9.Qyk0C31nsJtIlfTHMckJx7BkskkUmAHy0DFojetacY7nSepXvvwISJOTMs_zVlUgI2i5m1L70maq2NnUtpFJq0CotBYzdRWFm2oHuMwCTEN7q1XGz_LgPzWRfT2TSSxY--VeeoWHF5U4dk2-C58_13U0UiRg6NjUb6oi4O0abL9Xq60mM_f3gbGqmu-1jT8foOiyN5IQ6uaPmyqchalZYDfMciQDiFhJHRQQI967YR1Yp13GTzM0Tx1-DL4GjLV3j0aYVZID-yOtPmiFsVLzUJOgirK-StTFMSJ3FXLW0xQ.oKEbtAMg5oAuTuKHPXm-0LnhZlGW5mMvtOK_spi3u6I&dib_tag=se&keywords=batteria+strumento+musicale&qid=1732908411&sprefix=batteria+str%2Caps%2C215&sr=8-1-spons&ufe=app_do%3Aamzn1.fos.4ed3ebda-5e83-4808-af48-7e08fa6b1d8b&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">compra
+                prodotto</a>
+        </div>
+        <div class="prodottiSingoli">
+            <img src="assets/flauto.jpg" alt="">
+            <h3>flauto dolce</h3>
+            <button onclick="toggleVisibilitaImmagini()">togli immagine</button>
+            <p>TIGER REC2-WH - Flauto dolce per scuola, costruzione in 3 pezzi, con custodia, scovolino e tabella diteggiatura - colore bianco</p>
+            <div class="prezzoProdotto">10,44€
+            </div>
+            <a
+                href="https://www.amazon.it/Tiger-REC2-WH-Flauto-soprano-colore/dp/B00B2NUANQ/ref=sxin_14_pa_sp_search_thematic_sspa?content-id=amzn1.sym.ea48cac8-c4fb-47b5-bd35-bf533f3322f7%3Aamzn1.sym.ea48cac8-c4fb-47b5-bd35-bf533f3322f7&crid=LKZIUB3P1YP5&cv_ct_cx=flauto&dib=eyJ2IjoiMSJ9.0qM_V8LUSW3BNqDlzzWD3C2gBzLrLFdO_Ofzr-VbfwGiFXmhYBabUA1mxs9L90xP72jrCyCEhfPpBdonEcmr2A.BVDsQJsjxHLUn62iNmqp6jQw1FGw7UG4a1MB7U_fVk4&dib_tag=se&keywords=flauto&pd_rd_i=B00B2NUANQ&pd_rd_r=c08c2b3e-83df-40f4-ad9a-203aee759678&pd_rd_w=5WT0F&pd_rd_wg=7Z2Sg&pf_rd_p=ea48cac8-c4fb-47b5-bd35-bf533f3322f7&pf_rd_r=RCQ4Q9EAYHG3TZ9K1BA4&qid=1732908440&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=flauto%2Caps%2C177&sr=1-1-da050f4d-60ed-4d5b-91d9-dbfa7be05b60-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&psc=1">compra
+                prodotto</a>
+        </div>
+        <div class="sezioneCommenti">
+            <h3>Lascia un commento</h3>
+            <button onclick="toggleVisibilitaImmagini()">togli immagine</button>
+            <textarea placeholder="Scrivi qui il tuo commento..." rows="4" cols="50"></textarea>
+            <button class="submit-btn">Invia</button>
+        </div>
+        <button onclick="cambiaColorePrezzi()">Cambia Colore Prezzi</button>
+
+    </div>
+
+    <footer class="footer">
+        <p id="indirizzo"> E-commerce strumenti musicali, via inventata,789</p>
+    </footer>
+    <button onclick="cambiaIndirizzo()">Cambia Indirizzo</button>
+    <script src="file.js"></script>
+</body>
+
+</html>
